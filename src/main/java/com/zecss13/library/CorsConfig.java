@@ -16,7 +16,8 @@ public class CorsConfig {
                         .allowedOrigins(
                         "http://localhost:5173",
                         "https://library-frontend-k42jgtm4u-ezequiel-santos-s-projects.vercel.app",
-                        "https://library-frontend-k3hl2cd0s-ezequiel-santos-s-projects.vercel.app"
+                        "https://library-frontend-k3hl2cd0s-ezequiel-santos-s-projects.vercel.app",
+                        "https://library-frontend-ecbk9d4xv-ezequiel-santos-s-projects.vercel.app"
                     )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
