@@ -1,0 +1,20 @@
+-- schema.sql
+CREATE TABLE IF NOT EXISTS authors (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS categories (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS books (
+    id BIGINT AUTO_INCREMENT PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    author_id BIGINT NOT NULL,
+    category_id BIGINT NOT NULL,
+    isbn VARCHAR(255) NOT NULL UNIQUE,
+    FOREIGN KEY (author_id) REFERENCES authors(id),
+    FOREIGN KEY (category_id) REFERENCES categories(id)
+);
