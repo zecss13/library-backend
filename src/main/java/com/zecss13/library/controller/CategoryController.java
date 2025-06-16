@@ -2,7 +2,6 @@ package com.zecss13.library.controller;
 
 import com.zecss13.library.dto.request.CategoryRequestDTO;
 import com.zecss13.library.dto.response.CategoryResponseDTO;
-import com.zecss13.library.model.Category;
 import com.zecss13.library.service.CategoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
